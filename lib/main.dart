@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_application_2/pages/windHomePage.dart';
 
 import 'pages/andrHomePage.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: defaultTargetPlatform==TargetPlatform.android ? MyHomePage(title: 'Flutter Demo Home Page') : WindMyHomePage(title: "This is wind my home page"),
     );
   }
 }

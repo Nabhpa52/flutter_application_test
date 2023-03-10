@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class WindMyHomePage extends StatefulWidget {
+  const WindMyHomePage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<WindMyHomePage> createState() => _WindMyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _WindMyHomePageState extends State<WindMyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -45,9 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.blue,
         child: const Icon(
-          Icons.people,
+          Icons.abc_outlined,
           color: Colors.white,
         ),
       ),
