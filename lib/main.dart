@@ -21,7 +21,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: defaultTargetPlatform==TargetPlatform.android ? MyHomePage(title: 'Flutter Demo Home Page') : WindMyHomePage(title: "This is wind my home page"),
+      home: (defaultTargetPlatform == TargetPlatform.android ||
+              defaultTargetPlatform == TargetPlatform.iOS)
+          ? const MyHomePage(title: 'Flutter Demo Home Page')
+          : const WindMyHomePage(title: "This is wind my home page"),
     );
   }
 }
